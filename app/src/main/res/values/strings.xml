@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GeoLocation</string>
+    <string name="service_not_available">Service not available</string>
+    <string name="no_address_found">No address found</string>
+    <string name="address_found">Address found succesfully!</string>
+    <string name="mAddressOutput"></string>
+    <string name="no_geocoder_available">Geocoder not available</string>
+    <string name="invalid_lat_long_used">Bad Latitiude and Longatitiude</string>
+    <string name="directionsApiKey">AIzaSyDQ8_mJpcFlqneOvA4uLque9Yj_q24fzj8</string>
+    <string-array name="driving">
+        <item>DRIVING</item>
+        <item>BICYCLING</item>
+        <item>TRANSIT</item>
+        <item>WALKING</item>
+    </string-array>
+</resources>

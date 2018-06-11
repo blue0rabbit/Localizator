@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:context="com.google.android.gms.locationTest.MainActivity">
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="398dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinner"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distance" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Distance"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/map"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="576dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/map"
+        app:layout_constraintStart_toStartOf="@+id/map"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/route"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/spinner"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/spinner"
+            android:text="route"
+            android:textSize="8sp" />
+
+        <Button
+            android:id="@+id/Clear"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/route"
+            android:layout_toStartOf="@+id/route"
+            android:text="Clear"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/addmaker"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Clear"
+            android:layout_alignBottom="@+id/Clear"
+            android:layout_toLeftOf="@+id/Clear"
+            android:layout_toStartOf="@+id/Clear"
+            android:layout_weight="1"
+            android:text="My location"
+            android:textSize="5sp" />
+
+        <Button
+            android:id="@+id/eq"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/route"
+            android:layout_alignBottom="@+id/route"
+            android:layout_toLeftOf="@+id/AddMakerButton"
+            android:layout_toStartOf="@+id/AddMakerButton"
+            android:text="Equator"
+            android:textSize="7sp" />
+
+        <Button
+            android:id="@+id/AddMakerButton"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/addmaker"
+            android:layout_toStartOf="@+id/addmaker"
+            android:layout_weight="1"
+            android:text="Connect"
+            android:textSize="7sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="368dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/addmaker"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="42dp" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
